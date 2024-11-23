@@ -181,19 +181,8 @@ export default function Home() {
   `
   return (
     <div className={`relative ${itsDark ? "bg-black" : "bg-white"}]`}>
-      <header className="border-b-[#16f083] border-b-[2px] flex justify-between items-center pt-3 pb-3 bg-black fixed w-full z-50 pr-4 pl-4">
-          <h1 className="text-2xl font-bold text-white">Portfólio</h1>
-          <div
-            className={`${itsDark ? "bg-[#16f083]" : "bg-white"} h-7 w-[4em] rounded-2xl relative cursor-pointer transition-all duration-700`}
-            onClick={() => setItsDark((prev) => !prev)}
-          >
-            <div 
-            className={
-              `${itsDark ? "bg-white" : "bg-black"} h-5 w-[1.3em] rounded-full absolute top-1/2 -translate-y-1/2 transition-all 
-              duration-700 ${itsDark ? "translate-x-[7%]" : "translate-x-[-100%]"} ${itsDark ? "left-[0%]" : "left-[99%]"}`
-            }
-            ></div>
-        </div>
+      <header className="border-b-[#16f083] border-b-[2px] pt-3 pb-3 bg-black fixed w-full z-50 pr-4 pl-4">
+          <h1 className="text-2xl font-bold text-center text-white">Portfólio</h1>
       </header>
       <main className={`pt-[3.8em] ${itsDark ? "bg-black" : "bg-white"}`}>
         <section className="grid justify-around mt-24 items-center gap-12 sm:flex">
