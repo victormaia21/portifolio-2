@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -29,6 +29,10 @@ import { FaGithub } from "react-icons/fa";
 export default function Home() {
   const [itsDark, setItsDark] = useState(true);
 
+  useEffect(() => {
+    setItsDark(true);
+  }, [])
+ 
   const iconsNodeWithPrisma = [
     {
       component: SiPrisma
@@ -49,7 +53,7 @@ export default function Home() {
       component: FaDocker
     }
   ]
-  setItsDark(true)
+  
   const iconsNestAutenticacao = [
     {
       component: SiNestjs
