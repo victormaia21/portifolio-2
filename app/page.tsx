@@ -49,7 +49,7 @@ export default function Home() {
       component: FaDocker
     }
   ]
-
+  setItsDark(true)
   const iconsNestAutenticacao = [
     {
       component: SiNestjs
