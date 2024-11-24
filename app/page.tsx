@@ -136,8 +136,17 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
             <h1 className={`font-bold text-4xl ${itsDark && "text-[#16f083]"} transition-all duration-700 tracking-widest`}>João Victor :{")"}</h1>
             <p className="text-[#aaa] text-xl mt-2">Desenvolvedor Full-Stack</p>
             <div className="mt-5 flex gap-3">
-              <button className="bg-[#16f083] pl-4 pr-4 pt-2 pb-2 text-white rounded-3xl transition-all duration-700 hover:scale-90">Download Curriculo</button>
-              <button
+              <Link
+                href="/download/curriculo.pdf"
+                target="_blank"
+                download
+                className="bg-[#16f083] pl-4 pr-4 pt-2 pb-2 text-white rounded-3xl transition-all duration-700 hover:scale-90"
+              >
+                Download Curriculo
+              </Link>
+              <Link
+                href="malito:jvictorbmadm@gmail.com"
+                target="_blank"
                 className=
                   {
                     `border-[1px] border-[#16f083] pl-4 pr-4 pt-2 pb-2 rounded-3xl hover:bg-[#16f083] 
@@ -145,7 +154,7 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
                   }
               >
                 Entra em contato
-              </button>
+              </Link>
             </div>
           </div>
           <div>
