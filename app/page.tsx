@@ -182,7 +182,7 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
         </section>
         <section className={`${itsDark ? "bg-black" : "bg-white"}`}>
           <h1 className={`${itsDark ? "text-white" : "text-black"} text-center mt-12 font-bold text-3xl`}>Habilidades</h1>
-          <div className="grid grid-cols-habilitiys gap-4 pl-36 pr-36 text-center mt-12">
+          <div className="grid justify-center grid-cols-habilitiys gap-4 pl-36 pr-36 text-center mt-12">
             <div
               className=
               "flex flex-col items-center bg-[#202120] text-[#16f083] justify-center gap-1 text-2xl pt-6 pb-6 pl-2 pr-2 rounded-tl-xl border-b-[2px] h-36 border-b-[#16f083] cursor-pointer hover:scale-125 transition-all duration-500"
