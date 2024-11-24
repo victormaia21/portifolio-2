@@ -25,6 +25,7 @@ import { SiTypeorm } from "react-icons/si";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { BiLogoTailwindCss } from "react-icons/bi";
 
 export default function Home() {
   const [itsDark, setItsDark] = useState(true);
@@ -237,6 +238,13 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
             >
               <h2>Sass</h2>
               <FaSass />
+            </div>
+            <div
+              className=
+              "flex flex-col items-center bg-[#202120] text-[#16f083] justify-center gap-1 text-2xl pt-6 pb-6 pl-2 pr-2 h-36 rounded-tl-xl border-b-[2px] border-b-[#16f083] cursor-pointer hover:scale-125 transition-all duration-500"
+            >
+              <h2>Tailwilind</h2>
+              <BiLogoTailwindCss />
             </div>
             <div
               className=
