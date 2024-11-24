@@ -25,3 +25,21 @@
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
   background-color: #13d374; /* Cor ao passar o mouse sobre o polegar */
 }
+
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Fundo preto */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16f083; /* Verde */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #13d674; /* Verde mais claro ao passar o mouse */
+}
