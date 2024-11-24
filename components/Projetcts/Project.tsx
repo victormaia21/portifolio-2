@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { IconType } from 'react-icons';
 import { MdClose } from "react-icons/md";
 
@@ -34,6 +34,14 @@ export default function Project({
 }: Props) {
 
   const [info, setInfo] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const handleOutsideClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
+      setInfo(false);
+    }
+  };
+
   return (
     <>
         <div
@@ -70,8 +78,12 @@ export default function Project({
             className={`bg-[rgba(0,0,0,.5)] w-full fixed top-0 left-0 h-full z-50 backdrop-blur-[2px] flex justify-center items-center transition-opacity duration-700 ${
                 info ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
             }`}
+            onClick={handleOutsideClick} // Adiciona o evento de clique fora
+        >
+            <div
+              ref={modalRef} // Referência à segunda div
+              className="w-3/4 h-4/5 bg-black rounded-lg"
             >
-            <div className="w-3/4 h-4/5 bg-black rounded-lg overflow-y-scroll">
                 <div className="sm:flex gap-12 h-[85%] p-4 z-10">
                 {/* Seção do Vídeo */}
                 <div className="w-full sm:w-3/5 flex justify-center items-start">
@@ -127,5 +139,5 @@ export default function Project({
             </div>
 
     </>
-  )
+  );
 }

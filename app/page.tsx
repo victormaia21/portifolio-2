@@ -94,94 +94,35 @@ export default function Home() {
   ]
 
   const descriptionNodeWithPrisma = `
-    🔧 Tecnologias Utilizadas:
-        Node.js e Express: Base robusta para o servidor backend.
-        TypeScript: Segurança de tipo para um código mais confiável.
-        Prisma: ORM poderoso para integração com banco de dados MySQL.
-        JWT (JSON Web Tokens): Autenticação segura e eficiente.
-        Multer: Upload de imagens para perfis de usuários.
-        Swagger: Documentação clara e interativa da API.
+  Esse projeto nasceu da necessidade de criar uma API backend segura e eficiente que pudesse lidar com o cadastro e gerenciamento de usuários. A ideia era garantir que cada usuário tivesse uma experiência tranquila, desde o momento do registro até o gerenciamento de seu perfil, incluindo o envio de uma foto.
 
-        🌟 Principais Funcionalidades:
-        Registro de Usuário 📋:
-        Criação de novos usuários com validação de e-mail único.
-        Upload de foto de perfil.
+O maior desafio foi configurar corretamente a autenticação com JWT, pois queria garantir que as rotas protegidas estivessem realmente seguras. Além disso, integrar o Prisma com o banco de dados MySQL foi um aprendizado importante, principalmente ao lidar com queries mais complexas.
 
-        Login 🔑:
-        Autenticação de usuários com validação de e-mail e senha.
-        Geração de token JWT para sessões seguras.
-        Gerenciamento de Perfil 👤:
-        Atualização de dados do usuário, incluindo foto de perfil.
-        Exclusão de conta de usuário.
-        Documentação da API 📚:
-        Documentação interativa com Swagger, facilitando o entendimento e testes da API.
+Durante o desenvolvimento, usei o Multer para gerenciar o upload das fotos e o Swagger para documentar a API. Essas escolhas foram fundamentais para garantir que a aplicação fosse tanto funcional quanto fácil de entender por outros desenvolvedores.
 
-        📈 Benefícios do Projeto:
-        Segurança: Utilização de tokens JWT para garantir que apenas usuários autenticados possam acessar determinadas rotas.
-        Escalabilidade: Estrutura de código modular e clara, facilitando a manutenção e a adição de novas funcionalidades.
-        Facilidade de Uso: Documentação detalhada da API para desenvolvedores integrarem facilmente em outras aplicações.
-        Estou muito entusiasmado com os resultados deste projeto e como ele pode ser utilizado em diversas aplicações que necessitam de autenticação robusta e segura. Se você estiver interessado em saber mais ou discutir sobre oportunidades, sinta-se à vontade para entrar em contato!
+No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre segurança com JWT, boas práticas de estruturação de APIs e como o Prisma pode facilitar o trabalho com bancos de dados. Foi uma experiência muito enriquecedora que me preparou para novos desafios.
+
+
   `
 
   const descriptionNestAutenticacao = `
-    🚀🎉 Estou animado para compartilhar com vocês um projeto incrível que desenvolvi recentemente utilizando NestJS! 🎉🚀
+    Sempre me interessei por criar sistemas seguros e escaláveis, e foi isso que me motivou a desenvolver esse projeto de autenticação usando NestJS. O objetivo principal era criar uma aplicação robusta que pudesse lidar com registro, login e autorização, com um foco especial na segurança.
 
-    🔧 Tecnologias Utilizadas:
-    NestJS: Framework para Node.js construído para desenvolver aplicações escaláveis e eficientes.
-    PostgreSQL: Banco de dados relacional poderoso e de código aberto.
-    Prisma: ORM moderno e flexível para Node.js.
-    JWT: Implementação de autenticação segura com JSON Web Tokens.
+    Inicialmente, configurar o JWT no NestJS foi um pouco desafiador, mas entendi como os Guards do Nest funcionam e como proteger rotas de maneira eficaz. Outro ponto interessante foi aprender a lidar com uploads de fotos de perfil usando o Multer, uma funcionalidade que parece simples, mas que tem várias nuances quando falamos de segurança e performance.
 
-    📦 Configurações Principais:
-    Porta do Servidor: 3000
-    Banco de Dados: Conectado via PostgreSQL com todas as variáveis de ambiente configuradas para fácil customização.
-    Autenticação: Configurada com JWT para segurança robusta.
+    Eu também quis garantir que a API fosse bem documentada para facilitar a integração com outras aplicações. Por isso, o Swagger foi uma ferramenta indispensável nesse projeto. Além disso, todo o ambiente foi configurado para rodar em Docker, o que tornou o processo de desenvolvimento muito mais organizado.
 
-    🔄 Funcionalidades Implementadas:
-    Registro e Login de Usuários: Com validações completas para e-mail, nome de usuário e senha.
-    Upload de Imagens: Utilizando o Multer para gerenciar upload de fotos de perfil dos usuários.
-    Swagger API Documentation: Documentação da API criada com Swagger para facilitar a interação e entendimento das rotas disponíveis.
-    Autorização com Guards: Proteção das rotas com AuthGuard para garantir que apenas usuários autenticados possam acessar determinadas funcionalidades.
-
-    🛠️ Docker:
-    Configuração completa do Docker para ambiente de desenvolvimento.
-    Serviços: Contêineres separados para PostgreSQL e a aplicação NestJS, garantindo isolamento e facilidade de gerenciamento.
-
-    Este projeto representa um passo significativo no desenvolvimento de APIs robustas e seguras utilizando tecnologias modernas. Estou ansioso para explorar mais oportunidades e continuar evoluindo minhas habilidades. Se você está procurando alguém com experiência prática e paixão por desenvolvimento backend, vamos nos conectar! 🤝🔗
+    No final, a aplicação ficou do jeito que eu imaginava: segura, escalável e pronta para ser integrada em diferentes contextos. O projeto me ensinou muito sobre como estruturar uma aplicação backend robusta e como utilizar o NestJS de maneira eficaz.
   `
 
   const descriptionNextPost = `
-    🌍 Aplicação de Blog com Next.js e Integração de Mapas
+  Sempre achei interessante como mapas podem enriquecer a experiência do usuário em aplicações web, e foi essa curiosidade que me levou a criar esse projeto. A ideia era simples: um blog onde os usuários pudessem visualizar informações não só em texto, mas também em mapas interativos.
 
-      Desenvolvi uma aplicação de blog dinâmica e responsiva usando Next.js, integrando funcionalidades avançadas de mapa com Leaflet e utilizando a JSONPlaceholder API para busca de dados. Este projeto demonstra minha proficiência em tecnologias de frontend e backend, destacando a experiência do usuário e uma gestão robusta de dados.
+  Uma das maiores dificuldades foi integrar o Leaflet com Next.js, especialmente porque o comportamento dos mapas em ambientes SSR (Server-Side Rendering) pode ser um pouco complexo. No entanto, foi recompensador ver os mapas funcionando perfeitamente, mostrando localizações de usuários e posts de maneira dinâmica.
 
-      Principais Funcionalidades:
-      Interface Amigável: Construída com React e estilizada usando Material-UI, a aplicação oferece um design limpo, intuitivo e responsivo.
-      Busca e Filtro Avançados: Implementei um sistema de gerenciamento de estado usando Zustand para lidar com capacidades dinâmicas de busca, permitindo que os usuários filtrem posts de maneira eficiente.
-      Integração de Mapas: Integração de mapas Leaflet para exibir dados geográficos, melhorando a visualização de locais de usuários e posts.
-      Integração de API: Utilizei Axios para busca eficiente de dados da API JSONPlaceholder, garantindo uma recuperação rápida e confiável dos dados.
+  Outro ponto de aprendizado foi a gestão de estado com Zustand. Implementar funcionalidades como busca avançada e gerenciamento de favoritos foi um desafio, mas também uma oportunidade de explorar novas formas de melhorar a experiência do usuário.
 
-      Paginação: Implementação de paginação para lidar com grandes conjuntos de dados, melhorando o desempenho e a experiência do usuário.
-      Gestão de Favoritos: Desenvolvi uma funcionalidade para que os usuários possam favoritar posts, com persistência de dados usando local storage.
-
-      TypeScript: Garanti a segurança de tipos e melhorei a qualidade do código usando TypeScript em todo o projeto.
-      Testes: Empreguei React Query para gerenciar o estado do servidor e testar a confiabilidade das operações de busca de dados.
-
-      Stack Tecnológico:
-      Frontend: Next.js, React, Material-UI, Leaflet, Zustand, TypeScript, Sass
-      Backend: JSONPlaceholder API
-      Gerenciamento de Estado: Zustand
-      Busca de Dados: Axios, React Query
-      Ferramentas & Bibliotecas: ESLint, TypeScript, Local Storage
-
-      Destaques:
-      Gerenciamento de Estado Eficiente: Uso de Zustand para gerenciamento de estado global, garantindo interações suaves e responsivas.
-
-      Design Responsivo: A aplicação é totalmente responsiva, proporcionando uma experiência ótima tanto em dispositivos desktop quanto móveis.
-
-      Otimização de Desempenho: Implementação das melhores práticas para otimização de desempenho, incluindo busca eficiente de dados e carregamento preguiçoso de componentes.
-
-      Sinta-se à vontade para explorar o repositório do projeto aqui e ver a demonstração ao vivo aqui. Estou animado para conectar-me com profissionais e explorar novas oportunidades onde eu possa aplicar e expandir meu conjunto de habilidades.
+  No final, a aplicação não só atingiu seus objetivos, como também superou minhas expectativas. Além de criar uma interface bonita e responsiva com Material-UI, consegui implementar uma estrutura robusta que pode ser facilmente expandida no futuro. Foi um projeto divertido e desafiador, que me fez crescer muito como desenvolvedor.
   `
   return (
     <div className={`relative ${itsDark ? "bg-black" : "bg-white"}]`}>
@@ -357,7 +298,7 @@ export default function Home() {
                   icons={iconsNodeWithPrisma}
                   video={"/videos/nodejswithprisma.mp4"}
                   date="21 de julho de 2024"
-                  title="Projeto de Autenticação com Node.js e Prisma"
+                  title="Projeto com Node.js, TypeScript e Prisma"
                   description={descriptionNodeWithPrisma}
                   repositoryLink="https://github.com/victormaia21/Crud-nodeJs-Typescript-Docker-Prisma/tree/main"
                   linkedinPostLink="https://www.linkedin.com/posts/joaovictorbm_nodejs-typescript-prisma-activity-7218342465525710849-5X3e?utm_source=share&utm_medium=member_desktop"
@@ -367,7 +308,7 @@ export default function Home() {
                   icons={iconsNestAutenticacao}
                   video={"/videos/autenticacaowithnest.mp4"}
                   date="21 de julho de 2024"
-                  title="Projeto de Autenticação com Nest.JS e Prisma"
+                  title="Projeto de Autenticação com NestJS"
                   description={descriptionNestAutenticacao}
                   repositoryLink="https://github.com/victormaia21/Jest-authenticated-backend-with-prisma"
                   linkedinPostLink="https://www.linkedin.com/posts/joaovictorbm_nestjs-postgresql-jwt-activity-7218058731412963328-Dc3r?utm_source=share&utm_medium=member_desktop"
