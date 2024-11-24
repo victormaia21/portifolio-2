@@ -304,9 +304,9 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
             </div>
           </div>
         </section>
-        <section className={`pl-36 pr-36 ${itsDark && "text-white"} pt-20`}>
+        <section className={`pl-12 pr-12 sm:pl-24 sm:pr-24 ${itsDark && "text-white"} pt-20`}>
           <h1 className="text-center text-3xl font-bold">Projetos</h1>
-          <div className="mt-12">
+          <div className="mt-12]">
             <h1 className="text-2xl">Backend</h1>
             <div className="bg-[#16f083] w-36 h-1"></div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4">

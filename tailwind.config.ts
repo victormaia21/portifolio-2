@@ -14,7 +14,7 @@ export default {
       },
       gridTemplateColumns: {
         "habilitiys": "repeat(auto-fit, minmax(8em, 1fr))",
-        "projects": "repeat(auto-fit, minmax(4em, 1fr))"
+        "projects": "repeat(auto-fit, minmax(8em, 1fr))"
       },
       
     },

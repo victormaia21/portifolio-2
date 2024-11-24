@@ -45,7 +45,7 @@ export default function Project({
   return (
     <>
         <div
-          className="relative h-full mt-2 border-b-[3px]  border-b-[#16f083] transition-all duration-500 cursor-pointer hover:scale-110 group hover:z-40"
+          className="relative mt-2 border-b-[3px]  border-b-[#16f083] transition-all duration-500 cursor-pointer hover:scale-110 group hover:z-40"
           onClick={() => setInfo(true)}
         >
             <Image
