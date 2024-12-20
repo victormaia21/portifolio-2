@@ -94,6 +94,21 @@ export default function Home() {
     }
   ]
 
+  const iconsMercadoLivre = [
+    {
+      component: FaHtml5
+    },
+    {
+      component: SiNextdotjs
+    },
+    {
+      component: BiLogoTailwindCss
+    },
+    {
+      component: SiTypescript
+    }
+  ]
+
   const descriptionNodeWithPrisma = `
   Esse projeto nasceu da necessidade de criar uma API backend segura e eficiente que pudesse lidar com o cadastro e gerenciamento de usuários. A ideia era garantir que cada usuário tivesse uma experiência tranquila, desde o momento do registro até o gerenciamento de seu perfil, incluindo o envio de uma foto.
 
@@ -124,6 +139,11 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
   Outro ponto de aprendizado foi a gestão de estado com Zustand. Implementar funcionalidades como busca avançada e gerenciamento de favoritos foi um desafio, mas também uma oportunidade de explorar novas formas de melhorar a experiência do usuário.
 
   No final, a aplicação não só atingiu seus objetivos, como também superou minhas expectativas. Além de criar uma interface bonita e responsiva com Material-UI, consegui implementar uma estrutura robusta que pode ser facilmente expandida no futuro. Foi um projeto divertido e desafiador, que me fez crescer muito como desenvolvedor.
+  `
+
+  const descriptionMercadoLivre = `
+  Acabei de terminar mais um novo projeto, se trata de um template do mercado livre, demorei cerca de 10 dias para terminar ele, procurei fazer o mais simples e menos repetitivo em algumas parte, por isso que têm alguns lugares que em comparado ao site original esteja faltando, mas é isso, espero que gostem e em breve trago mais pra cá😅 
+  tecnologias utilizadas: Nextjs, Typescript, Taiwilind
   `
   return (
     <div className={`relative ${itsDark ? "bg-black" : "bg-white"}]`}>
@@ -344,6 +364,17 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
                   description={descriptionNextPost}
                   repositoryLink="https://github.com/victormaia21/app-posts-mapa-with-nextjs/tree/main"
                   linkedinPostLink="https://www.linkedin.com/posts/joaovictorbm_aplica%C3%A7%C3%A3o-de-blog-com-nextjs-e-integra%C3%A7%C3%A3o-activity-7218001868373839875-QQst?utm_source=share&utm_medium=member_desktop"
+              />
+              <Project 
+                  src={'/img/mercadoLivreCaptura.png'}
+                  icons={iconsMercadoLivre}
+                  video={"/videos/MercadoLivre.mp4"}
+                  date="13 de dezembro de 2024"
+                  title="Projeto mercado livre"
+                  description={descriptionMercadoLivre}
+                  projectLink="https://mercado-livre-page-dg0gojfls-victormaia21s-projects.vercel.app/"
+                  repositoryLink="https://github.com/victormaia21/Mercado_Livre"
+                  linkedinPostLink="https://www.linkedin.com/posts/joaovictorbm_acabei-de-terminar-mais-um-novo-projeto-activity-7275958921100427264-QXzM?utm_source=share&utm_medium=member_desktop"
               />
             </div>
           </div>
