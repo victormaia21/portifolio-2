@@ -108,6 +108,21 @@ export default function Home() {
       component: SiTypescript
     }
   ]
+  
+  const iconsTIM = [
+    {
+      component: FaHtml5,
+    },
+    {
+      component: SiNextdotjs,
+    },
+    {
+      component: BiLogoTailwindCss,
+    },
+    {
+      component: SiTypescript
+    }
+  ]
 
   const descriptionNodeWithPrisma = `
   Esse projeto nasceu da necessidade de criar uma API backend segura e eficiente que pudesse lidar com o cadastro e gerenciamento de usuários. A ideia era garantir que cada usuário tivesse uma experiência tranquila, desde o momento do registro até o gerenciamento de seu perfil, incluindo o envio de uma foto.
@@ -140,6 +155,9 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
 
   No final, a aplicação não só atingiu seus objetivos, como também superou minhas expectativas. Além de criar uma interface bonita e responsiva com Material-UI, consegui implementar uma estrutura robusta que pode ser facilmente expandida no futuro. Foi um projeto divertido e desafiador, que me fez crescer muito como desenvolvedor.
   `
+
+  const descriptionTIM = `🚀 Apresento meu mais recente projeto: um clone da seção de planos do TIM Controle, desenvolvido com Next.js, Material-UI (MUI) e Tailwind CSS. Utilizei TypeScript para garantir tipagem segura e componentes reutilizáveis organizados de forma clara e escalável.
+O objetivo foi praticar a construção de interfaces modernas, responsivas e visualmente fiéis ao original. Projeto desenvolvido para fins educacionais.`;
 
   const descriptionMercadoLivre = `
   Acabei de terminar mais um novo projeto, se trata de um template do mercado livre, demorei cerca de 10 dias para terminar ele, procurei fazer o mais simples e menos repetitivo em algumas parte, por isso que têm alguns lugares que em comparado ao site original esteja faltando, mas é isso, espero que gostem e em breve trago mais pra cá😅 
@@ -354,7 +372,7 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
             
             <h1 className="text-2xl mt-20">Frontend</h1>
             <div className="bg-[#16f083] w-36 h-1"></div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-x-4 gap-y-4 pb-48 h-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4">
               <Project 
                   src={'/img/posts.png'}
                   icons={iconsNextPosts}
@@ -372,6 +390,17 @@ No final, o projeto atendeu totalmente os objetivos. Aprendi muito sobre seguran
                   date="13 de dezembro de 2024"
                   title="Projeto mercado livre"
                   description={descriptionMercadoLivre}
+                  projectLink="https://mercado-livre-page-dg0gojfls-victormaia21s-projects.vercel.app/"
+                  repositoryLink="https://github.com/victormaia21/Mercado_Livre"
+                  linkedinPostLink="https://www.linkedin.com/posts/joaovictorbm_acabei-de-terminar-mais-um-novo-projeto-activity-7275958921100427264-QXzM?utm_source=share&utm_medium=member_desktop"
+              />
+              <Project 
+                  src={'/img/fototim.png'}
+                  icons={iconsTIM}
+                  video={"/videos/videotim.mp4"}
+                  date="11 de agosto de 2025"
+                  title="Projeto TIM"
+                  description={descriptionTIM}
                   projectLink="https://mercado-livre-page-dg0gojfls-victormaia21s-projects.vercel.app/"
                   repositoryLink="https://github.com/victormaia21/Mercado_Livre"
                   linkedinPostLink="https://www.linkedin.com/posts/joaovictorbm_acabei-de-terminar-mais-um-novo-projeto-activity-7275958921100427264-QXzM?utm_source=share&utm_medium=member_desktop"
